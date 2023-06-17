@@ -14,6 +14,7 @@ export default class ScreenB extends React.Component {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>Screen B</Text>
+        <Text>{this.props.route.params.value}</Text>
         <Button
           title="Go to Screen A"
           onPress={() => {

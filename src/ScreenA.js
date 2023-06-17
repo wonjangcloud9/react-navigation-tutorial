@@ -20,10 +20,11 @@ export default class ScreenA extends React.Component {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>Screen A</Text>
+
         <Button
           title="Go to Screen B"
           onPress={() => {
-            this.props.navigation.navigate("ScreenB");
+            this.props.navigation.navigate("ScreenB", { value: "fromA" });
           }}
         />
       </View>
