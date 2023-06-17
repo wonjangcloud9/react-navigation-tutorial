@@ -8,6 +8,7 @@ import NestedStackNavigator from "./src/NestedStackNavigator";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import TabA from "./src/TabA";
 import TabB from "./src/TabB";
+import { Ionicons } from "@expo/vector-icons";
 
 const Stack = createNativeStackNavigator();
 const BottomTab = createBottomTabNavigator();
@@ -27,8 +28,16 @@ export default function App() {
   return (
     <NavigationContainer>
       <BottomTab.Navigator>
-        <BottomTab.Screen name="a" component={TabA} />
-        <BottomTab.Screen name="b" component={TabB} />
+        <BottomTab.Screen
+          name="a"
+          component={TabA}
+          options={{ tabBarIcon: () => <Ionicons name="home" size={24} /> }}
+        />
+        <BottomTab.Screen
+          name="b"
+          component={TabB}
+          options={{ tabBarIcon: () => <Ionicons name="settings" size={24} /> }}
+        />
       </BottomTab.Navigator>
     </NavigationContainer>
   );
