@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
 //     }
 // }
 
-export const Typography = (props) => {
+export const Typograpy = (props) => {
   return (
     <RNText
       style={{
@@ -29,7 +29,7 @@ export const Typography = (props) => {
   );
 };
 
-Typography.propTypes = {
+Typograpy.propTypes = {
   color: PropTypes.string,
   fontSize: PropTypes.number.isRequired,
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),

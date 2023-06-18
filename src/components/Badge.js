@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { Typography } from "./Typograpy";
+import { Typograpy } from "./Typograpy";
 
 export const Badge = (props) => {
   return (
@@ -23,7 +23,7 @@ export const Badge = (props) => {
           },
         ]}
       >
-        <Typography fontSize={10} color="white" />
+        <Typograpy fontSize={10} color="white" />
       </View>
     </View>
   );
