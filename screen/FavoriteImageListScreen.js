@@ -10,7 +10,7 @@ export const FavoriteImageListScreen = (props) => {
         alignItems: "center",
       }}
     >
-      <Text>Favorite Image List</Text>
+      <Text>FavoriteImageListScreen</Text>
     </View>
   );
 };
